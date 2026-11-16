@@ -3,7 +3,7 @@
 Static site for [DuosApp](https://play.google.com/store/apps/details?id=com.duosapp), hosted on GitHub Pages.
 No build step, no framework: plain HTML + one stylesheet. Edit a file, commit, and GitHub Pages republishes within a minute or two.
 
-**Live site:** https://kishors316.github.io/duosapp-website/
+**Live site:** https://kishors316.github.io/duosapp/
 
 ## Pages
 
