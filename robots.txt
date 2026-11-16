@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kishors316.github.io/duosapp-website/sitemap.xml
