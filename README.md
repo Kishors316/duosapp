@@ -28,7 +28,7 @@ No build step, no framework: plain HTML + one stylesheet. Edit a file, commit, a
 - **Font:** Poppins is self-hosted from `assets/fonts/` (SIL Open Font License, see `LICENSE-Poppins.txt` there) — no request goes to Google Fonts. To change the typeface, replace the `.woff2` files and the `@font-face` block at the top of `site.css`.
 - **Support email / Play link:** search the repo for `duosapp.support@gmail.com` and `id=com.duosapp` and replace.
 - **Screenshots:** `assets/img/screens/`. Each screen has a `name.webp` (470 px wide) and `name@2x.webp` (940 px) for sharp displays. To add one, drop in both sizes and copy a `<figure>` block in `index.html`.
-- **Reel:** `assets/video/reel.mp4` (poster: `reel-poster.jpg`). Keep it under ~2 MB so the homepage stays fast.
+- **Video:** `assets/video/duosapp-ad.mp4` (poster: `duosapp-ad-poster.jpg`), 576×1024 H.264 with sound (muted until the visitor taps). Keep it under ~2 MB so the homepage stays fast.
 - **Header and footer** are repeated in every file (no templating), so a change to them is a change to all seven pages.
 
 ## Google Play "Get it on Google Play" badge

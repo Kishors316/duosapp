@@ -38,7 +38,7 @@
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> › Privacy Policy</nav>
     <article class="policy-card">
       <h1>Privacy Policy</h1>
-      <p class="policy-meta">Last updated: 19 November 2026</p>
+      <p class="policy-meta">Last updated: 24 November 2026</p>
       <nav class="toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#summary">1. The short version</a></li><li><a href="#collect">2. What we collect</a></li><li><a href="#why">3. Why we use it</a></li><li><a href="#location">4. Location sharing</a></li><li><a href="#partner">5. What your partner can see</a></li><li><a href="#providers">6. Service providers and transfers</a></li><li><a href="#retention">7. How long we keep data</a></li><li><a href="#security">8. Security</a></li><li><a href="#rights">9. Your rights and choices</a></li><li><a href="#children">10. Children</a></li><li><a href="#changes">11. Changes to this policy</a></li><li><a href="#contact">12. Contact</a></li></ol></nav>
 
 <p>This Privacy Policy explains what information DuosApp collects, why, and the choices you have. It applies to the DuosApp Android app and this website. It is written to meet the requirements of India's Digital Personal Data Protection Act, 2023, the EU/UK GDPR where they apply, and Google Play's User Data policy.</p>
@@ -47,7 +47,8 @@
 <ul>
   <li>DuosApp is a private app for two people. There is no public profile, no feed and no discovery.</li>
   <li>We collect only what the app needs to work: your Google sign-in identity, the profile you create, the content you share with your partner, and — only if you turn it on — your location.</li>
-  <li>We <strong>do not sell</strong> your data, <strong>do not show ads</strong>, and <strong>do not use analytics or advertising trackers</strong>.</li>
+  <li>We <strong>do not sell</strong> your data and <strong>do not use analytics or advertising trackers</strong>.</li>
+  <li>Music Mood shares <em>links</em> to songs, never music files. A song opens in the music service's own app, and only your phone talks to that service to look up the song's name and cover.</li>
   <li>Your data is readable only by your account and your paired partner's account, enforced by server-side security rules.</li>
   <li>You can delete your account and data from inside the app at any time.</li>
 </ul>
@@ -60,6 +61,7 @@
     <tr><td><strong>Profile</strong></td><td>Display name, gender, profile photo, birthday (day and month; the year is optional and you choose whether your partner sees it), mood status.</td><td>You, in the app.</td></tr>
     <tr><td><strong>Pairing</strong></td><td>Your pairing code, who you are paired with, and the date you pair.</td><td>You and your partner.</td></tr>
     <tr><td><strong>Shared content</strong></td><td>Chat messages, photos, videos, voice notes, doodles, "moments" photos, diary entries, notes, to-dos, timeline milestones, special dates, daily-question answers and game answers.</td><td>You and your partner.</td></tr>
+    <tr><td><strong>Music Mood</strong></td><td>Links to songs you share from supported music services (Spotify, YouTube, YouTube Music, Apple Music, JioSaavn, Gaana, Wynk Music, Amazon Music and SoundCloud); each song's title, artist, the service it is on and a link to its cover image; and any mood, message, category or note you add. We store links and text only — never music or audio files.</td><td>You and your partner. The title, artist and cover link can be filled in from the music service's public details for the link you paste (see <a href="#music">section 6</a>).</td></tr>
     <tr><td><strong>Secret Vault</strong></td><td>Photos, videos, notes and documents you add to the Vault (adding needs Premium). They are encrypted on your device before upload, so what we store is the encrypted content, plus each item's kind (photo, video, note or document), file type, size, who added it and when.</td><td>You and your partner.</td></tr>
     <tr><td><strong>Location</strong> (optional)</td><td>Precise latitude, longitude and accuracy, <em>only while you have location sharing switched on</em>. See <a href="#location">section 4</a>.</td><td>Your device, with your permission.</td></tr>
     <tr><td><strong>Device &amp; technical</strong></td><td>A push-notification token (Firebase Cloud Messaging), an app-integrity attestation (Firebase App Check / Play Integrity), presence status (online/offline), app version, and basic request logs kept by our infrastructure provider.</td><td>Your device and Google services.</td></tr>
@@ -90,16 +92,24 @@
 
 <h2 id="partner">5. What your partner can see</h2>
 <p>Because DuosApp is a shared space, your partner can see the content you add to shared areas, your display name, photo, mood, birthday (day and month — and the year only if you choose to share it), and your location while you are sharing it.</p>
+<p>In <strong>Music Mood</strong>, your partner sees each song you share with your mood and message, and the songs either of you add to Our Songs. When you share a song, their phone also gets a notification showing the song's title, your mood and your message.</p>
 <p>The <strong>Secret Vault is shared too</strong>: you have one vault as a couple, either of you can view, add and delete anything in it, and the app shows who added each item. Your Vault PIN is not shared — each of you sets your own, and it never leaves your phone.</p>
 <p>Your partner cannot see your Google account password, your Vault PIN, your device information or your purchase details.</p>
 
 <h2 id="providers">6. Service providers and transfers</h2>
 <p>DuosApp is built on Google's Firebase platform. These providers process data on our behalf under their own security and privacy commitments:</p>
 <ul>
-  <li><strong>Firebase Authentication</strong> (sign-in), <strong>Cloud Firestore</strong> and <strong>Realtime Database</strong> (app data and presence), <strong>Cloud Storage for Firebase</strong> (photos, videos, voice notes, doodles, vault files), <strong>Cloud Functions</strong> (purchase verification, account deletion, Secret Vault keys and retention), <strong>Firebase Cloud Messaging</strong> (notifications), <strong>Firebase App Check</strong> with Play Integrity (abuse prevention) and <strong>Firebase Remote Config</strong> (minimum-version checks).</li>
+  <li><strong>Firebase Authentication</strong> (sign-in), <strong>Cloud Firestore</strong> and <strong>Realtime Database</strong> (app data and presence), <strong>Cloud Storage for Firebase</strong> (photos, videos, voice notes, doodles, vault files), <strong>Cloud Functions</strong> (notifications, purchase verification, account deletion, Secret Vault keys and retention), <strong>Firebase Cloud Messaging</strong> (notifications), <strong>Firebase App Check</strong> with Play Integrity (abuse prevention) and <strong>Firebase Remote Config</strong> (minimum-version checks).</li>
   <li><strong>Google Play Billing</strong> for purchases.</li>
 </ul>
-<p>Data is stored on Google Cloud infrastructure, which may be located outside your country, including outside India and the European Economic Area. Google maintains standard contractual safeguards for such transfers. We do not share your personal data with advertisers, data brokers or any other third party, and we only disclose it where the law requires or to protect someone's safety.</p>
+<p>Data is stored on Google Cloud infrastructure, which may be located outside your country, including outside India and the European Economic Area. Google maintains standard contractual safeguards for such transfers. We do not share your personal data with advertisers, data brokers or any other third party, and we only disclose it where the law requires or to protect someone's safety. The music-service requests described below are made by your own phone, only when you use Music Mood.</p>
+<h3 id="music">Music services (Music Mood)</h3>
+<ul>
+  <li>When you paste a song link, your phone asks that music service for the song's public details — its title, artist and cover image — using the service's public link-preview or lookup tools (for example Spotify's and YouTube's oEmbed, or Apple's iTunes lookup). The request goes straight from your phone to the music service, which receives the link and your device's IP address, just as when you open a link in a browser. Your partner's phone does not make this request; it reads the details from our servers.</li>
+  <li>Cover images are loaded from the music service's own servers when a song is shown, so that service can see those requests too.</li>
+  <li>Opening a song takes you to the music service's app or website, where its own terms and privacy policy apply.</li>
+  <li>DuosApp does not play, stream, download or store music, and receives no account details, playlists or listening history from any music service.</li>
+</ul>
 
 <h2 id="retention">7. How long we keep data</h2>
 <ul>
@@ -107,8 +117,9 @@
   <li><strong>Location:</strong> only while sharing is on; deleted when it stops.</li>
   <li><strong>Deleted messages:</strong> "Delete for me" hides a message for you; "Delete for everyone" removes the content for both partners and leaves a placeholder.</li>
   <li><strong>After account deletion:</strong> your account, profile, location, mood and sign-in link are deleted at once. Content you shared with your partner (chat, doodles, diary and the rest of the shared space) stays available to them while they keep their account, with you shown as "Deleted Account", and is deleted when they delete theirs — the <a href="delete-account.html">Data Deletion Policy</a> sets this out in full. Residual copies in backups are removed within 30 days. We may retain minimal purchase records as required for tax and fraud prevention.</li>
+  <li><strong>Music Mood:</strong> a song you share stays in your shared history until you remove it; songs in Our Songs stay until either of you removes them. When you delete your account your current mood song is removed, and the songs you shared stay with your partner like the rest of the shared space.</li>
   <li><strong>Secret Vault:</strong> items stay until one of you deletes them. If you <strong>unpair</strong>, shared access ends immediately; for the next <strong>30 days</strong> each of you can still open, save and delete only the items you added yourself, and pairing with each other again within that time restores the whole vault. After 30 days the vault — its files, notes and its encryption key — is permanently deleted. If you <strong>delete your account</strong>, the Vault items you added are deleted immediately, and your partner has the same 30 days to save their own items before the vault is deleted. Nothing in the Vault is ever deleted to make room for new content.</li>
-  <li><strong>On your phone:</strong> doodles and photos you have opened are kept on the device so they still open without a connection, and the titles and dates of your special dates are kept locally so reminders work offline. Vault items you add or open are kept on the phone only in encrypted form, and are left out of device backups; any decrypted copy made to show you a video or document is deleted as soon as the Vault locks. These copies never leave the phone; clear them any time from Settings → Storage, and they are removed when you uninstall the app.</li>
+  <li><strong>On your phone:</strong> doodles, photos and song cover images you have opened are kept on the device so they still open without a connection, and the titles and dates of your special dates are kept locally so reminders work offline. Vault items you add or open are kept on the phone only in encrypted form, and are left out of device backups; any decrypted copy made to show you a video or document is deleted as soon as the Vault locks. These copies never leave the phone; clear them any time from Settings → Storage, and they are removed when you uninstall the app.</li>
   <li><strong>Support emails:</strong> up to 12 months.</li>
 </ul>
 

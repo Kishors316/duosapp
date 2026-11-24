@@ -160,8 +160,31 @@ p { margin: 0 0 1em; }
 /* Video */
 .video-wrap { display: grid; gap: 2rem; align-items: center; }
 .video-frame { width: min(100%, 320px); margin-inline: auto; border-radius: 30px; padding: 8px; background: linear-gradient(160deg, #fff, #ffe9f4); box-shadow: var(--shadow); }
+.video-frame { position: relative; }
 .video-frame video { border-radius: 24px; width: 100%; }
+.sound-toggle { position: absolute; left: 18px; bottom: 18px; border: 0; border-radius: 999px; padding: 0.45rem 0.85rem; font: 600 0.82rem var(--font); color: #fff; background: rgba(61, 12, 51, 0.62); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); cursor: pointer; }
+.sound-toggle:focus-visible { outline: 3px solid var(--pink); outline-offset: 2px; }
 @media (min-width: 900px) { .video-wrap { grid-template-columns: 1fr 1fr; } }
+
+/* Secret Vault highlight. Only "encrypted" and "PIN-locked": the vault is not
+   end-to-end encrypted (the server holds the key), so never claim that here. */
+.pill-link:hover { text-decoration: none; color: var(--ink); }
+.vault { display: grid; gap: 2rem; align-items: center; background: var(--card); border-radius: var(--radius); padding: clamp(1.5rem, 4vw, 2.75rem); box-shadow: var(--shadow-sm); }
+.vault .eyebrow { display: inline-block; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--magenta); margin-bottom: 0.5rem; }
+.vault .checks { grid-template-columns: 1fr; }
+.vault-note { margin: 1.2rem 0 0; font-size: 0.92rem; color: var(--ink-muted); }
+.vault-visual { display: grid; place-items: center; }
+.vault-card { position: relative; overflow: hidden; width: min(100%, 280px); aspect-ratio: 4 / 5; border-radius: 28px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.1rem; color: #fff; background: linear-gradient(160deg, #6B1A5A 0%, #3D0C33 60%, #2A0824 100%); box-shadow: var(--shadow); }
+.vault-card::before { content: ""; position: absolute; top: -25%; right: -25%; width: 75%; height: 75%; border-radius: 50%; background: radial-gradient(circle, rgba(255, 72, 150, 0.55), transparent 70%); }
+.vault-card > * { position: relative; }
+.vault-lock { width: 84px; height: 84px; border-radius: 26px; display: grid; place-items: center; font-size: 2.4rem; background: linear-gradient(135deg, var(--pink), var(--magenta)); box-shadow: 0 14px 30px rgba(224, 52, 159, 0.45); }
+.vault-title { font-weight: 800; font-size: 1.2rem; letter-spacing: 0.01em; }
+.vault-dots { display: flex; gap: 0.7rem; }
+.vault-dots span { width: 14px; height: 14px; border-radius: 50%; background: #fff; }
+.vault-dots span.empty { background: transparent; border: 2px solid rgba(255, 255, 255, 0.6); }
+.vault-items { display: grid; grid-template-columns: repeat(4, 44px); gap: 0.6rem; }
+.vault-items span { height: 44px; border-radius: 12px; display: grid; place-items: center; font-size: 1.3rem; background: rgba(255, 255, 255, 0.24); }
+@media (min-width: 900px) { .vault { grid-template-columns: 1.25fr 1fr; } }
 
 /* Privacy band */
 .band { background: var(--card); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-sm); }

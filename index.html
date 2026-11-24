@@ -50,6 +50,7 @@
           <a class="btn btn-ghost" href="#features">See what's inside</a>
         </div>
         <div class="hero-badges">
+          <a class="pill pill-link" href="#vault">🔐 Encrypted, PIN-locked vault</a>
           <span class="pill">🔒 Private by design</span>
           <span class="pill">🙈 No feed, no strangers</span>
           <span class="pill">💞 One pairing, one code</span>
@@ -73,6 +74,33 @@
     </div>
   </section>
 
+  <section class="section" id="vault">
+    <div class="container">
+      <div class="vault">
+        <div class="vault-copy">
+          <span class="eyebrow">Secret Vault</span>
+          <h2>An encrypted, PIN-locked space for the two of you</h2>
+          <p class="muted">Keep the photos, videos, notes and documents that are just for you two in one shared vault, behind a PIN of your own.</p>
+          <ul class="checks">
+            <li>Encrypted on your phone with AES-256 before anything is uploaded</li>
+            <li>Each of you opens it with your own PIN or fingerprint, and your PIN never leaves your phone</li>
+            <li>Locks itself when you leave the app, and blocks screenshots and screen recording</li>
+            <li>One vault for the two of you: either of you can add, view and delete, and you can see who added what</li>
+          </ul>
+          <p class="vault-note">Adding to the vault is part of Premium, which covers both of you. <a href="privacy.html#security">How the vault is protected →</a></p>
+        </div>
+        <div class="vault-visual" aria-hidden="true">
+          <div class="vault-card">
+            <div class="vault-lock">🔒</div>
+            <div class="vault-title">Secret Vault</div>
+            <div class="vault-dots"><span></span><span></span><span></span><span class="empty"></span></div>
+            <div class="vault-items"><span>📷</span><span>🎥</span><span>📝</span><span>📄</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="screens">
     <div class="container">
       <div class="section-head">
@@ -87,14 +115,15 @@
   <section class="section" id="reel">
     <div class="container video-wrap">
       <div class="video-frame">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/video/reel-poster.jpg" aria-label="A short reel of DuosApp">
-          <source src="assets/video/reel.mp4" type="video/mp4">
+        <video id="ad-video" autoplay muted loop playsinline preload="metadata" poster="assets/video/duosapp-ad-poster.jpg" aria-label="DuosApp video: couples staying close through the day, ending with Your Story. Your Space.">
+          <source src="assets/video/duosapp-ad.mp4" type="video/mp4">
         </video>
+        <button class="sound-toggle" type="button" aria-pressed="false" hidden>🔇 Tap for sound</button>
       </div>
       <div>
-        <span class="eyebrow" style="display:inline-block;font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--magenta);margin-bottom:.5rem">Twenty seconds</span>
-        <h2>Your private space, in motion</h2>
-        <p class="muted">A quick look at how DuosApp feels day to day — from the morning question to the evening doodle.</p>
+        <span class="eyebrow" style="display:inline-block;font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--magenta);margin-bottom:.5rem">Under thirty seconds</span>
+        <h2>Your story. Your space.</h2>
+        <p class="muted">Two people, one private space — for the late-night messages, the quiet check-ins and everything in between.</p>
         <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.duosapp" rel="noopener" target="_blank">Get DuosApp on Google Play</a>
       </div>
     </div>
@@ -122,7 +151,7 @@
   <section class="section" id="faq">
     <div class="container">
       <div class="section-head"><span class="eyebrow">Questions</span><h2>Frequently asked</h2></div>
-      <details class="feature" style="margin-bottom:.8rem"><summary style="cursor:pointer;font-weight:700;font-size:1.05rem">Is DuosApp free?</summary><p style="margin-top:.7rem">Yes. Chat, doodles, games, the daily question, date ideas, the gallery, special dates, location sharing and mood check-ins are free, with 2 GB of shared storage. Premium lifts the diary, notes, to-do and timeline limits, adds 50 GB of storage and unlocks the Secret Vault — one subscription covers both partners. See the <a href="refund-policy.html">Refund &amp; Cancellation Policy</a>.</p></details><details class="feature" style="margin-bottom:.8rem"><summary style="cursor:pointer;font-weight:700;font-size:1.05rem">Can anyone else see our chats?</summary><p style="margin-top:.7rem">No. DuosApp has no feed, no followers and no discovery. Your data is readable only by the two paired accounts, enforced by server-side security rules. We don't sell data and we don't show ads. Details are in the <a href="privacy.html">Privacy Policy</a>.</p></details><details class="feature" style="margin-bottom:.8rem"><summary style="cursor:pointer;font-weight:700;font-size:1.05rem">How do I delete my account?</summary><p style="margin-top:.7rem">In the app: Settings → Delete Account. If you can't sign in, email us — the steps are on the <a href="delete-account.html">Data Deletion Policy</a> page.</p></details><details class="feature" style="margin-bottom:.8rem"><summary style="cursor:pointer;font-weight:700;font-size:1.05rem">Who can use DuosApp?</summary><p style="margin-top:.7rem">DuosApp is for adults aged 18 and over. See our <a href="child-safety.html">Child Safety Standards</a>.</p></details>
+      <details class="feature" style="margin-bottom:.8rem"><summary style="cursor:pointer;font-weight:700;font-size:1.05rem">Is DuosApp free?</summary><p style="margin-top:.7rem">Yes. Chat, doodles, games, the daily question, date ideas, the gallery, special dates, location sharing and mood check-ins are free, with 2 GB of shared storage. Premium lifts the diary, notes, to-do and timeline limits, adds 50 GB of storage and unlocks the Secret Vault — one subscription covers both partners. See the <a href="refund-policy.html">Refund &amp; Cancellation Policy</a>.</p></details><details class="feature" style="margin-bottom:.8rem"><summary style="cursor:pointer;font-weight:700;font-size:1.05rem">Can anyone else see our chats?</summary><p style="margin-top:.7rem">No. DuosApp has no feed, no followers and no discovery. Your data is readable only by the two paired accounts, enforced by server-side security rules. We don't sell your data. Details are in the <a href="privacy.html">Privacy Policy</a>.</p></details><details class="feature" style="margin-bottom:.8rem"><summary style="cursor:pointer;font-weight:700;font-size:1.05rem">How do I delete my account?</summary><p style="margin-top:.7rem">In the app: Settings → Delete Account. If you can't sign in, email us — the steps are on the <a href="delete-account.html">Data Deletion Policy</a> page.</p></details><details class="feature" style="margin-bottom:.8rem"><summary style="cursor:pointer;font-weight:700;font-size:1.05rem">Who can use DuosApp?</summary><p style="margin-top:.7rem">DuosApp is for adults aged 18 and over. See our <a href="child-safety.html">Child Safety Standards</a>.</p></details>
     </div>
   </section>
 
@@ -177,6 +206,24 @@
   </div>
 </footer>
 <script>
+  (function () {
+    var v = document.getElementById('ad-video'), b = document.querySelector('.sound-toggle');
+    if (!v || !b) return;
+    // Motion-sensitive visitors get a still poster and normal controls instead.
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      v.removeAttribute('autoplay');
+      v.pause();
+      v.controls = true;
+      return;
+    }
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted && v.paused) v.play();
+      b.setAttribute('aria-pressed', v.muted ? 'false' : 'true');
+      b.textContent = v.muted ? '🔇 Tap for sound' : '🔊 Sound on';
+    });
+  })();
   (function () {
     var t = document.querySelector('.nav-toggle'), d = document.getElementById('drawer');
     if (!t || !d) return;
